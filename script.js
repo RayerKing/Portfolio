@@ -446,3 +446,16 @@ finalButton.addEventListener("click", konec);
 document.addEventListener("keydown", movement);
 // Button pro restart
 restart.addEventListener("click", startHry);
+
+const projectMedia = document.querySelector("#project-media-minihra a");
+
+projectMedia.addEventListener("click", (e) => {
+
+  const hasMouse = matchMedia("(pointer:fine)").matches;   // jemný pointer = myš
+  const hasKeyboard = matchMedia("(any-hover:hover)").matches; // umí hover = obvykle myš/klávesnice
+
+  if (!hasMouse && !hasKeyboard) {
+    e.preventDefault(); // zabrání otevření odkazu
+    alert("Pro spuštění minihry potřebujete myš a klávesnici 🙂");
+  }
+});

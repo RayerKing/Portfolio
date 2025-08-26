@@ -45,7 +45,7 @@ body {
   align-items: center;
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background: url("pictures/hero_dark_rings_nomesh_2560x1440.png") center/cover no-repeat;
   color: #fff;
 }
 
@@ -61,6 +61,149 @@ body {
   color: #5f5f5f;
   font-weight: normal;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+#projects {
+  padding: 5rem 2rem 2rem;
+  background-color: #181818;
+}
+
+#projects h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.project-tile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.inner-projects {
+  background: #2c2c2c;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.inner-projects:hover {
+  transform: scale(1.03);
+}
+
+.inner-empty {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.inner-empty:hover {
+  transform: none;
+}
+
+#projects h1:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.project-pictures {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #222; 
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2); 
+}
+
+#welcome-section h2 {
+  font-size: 1.5rem;
+  color: #5f5f5f; 
+  font-weight: normal;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1); 
+}
+
+.h2Flex {
+  text-align: center;
+  
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+
+
+#info {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#info h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+#info p {
+  max-width: 700px;
+  margin: 1rem auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.socials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.socials a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffd166;
+}
+
+.project-media {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.project-media img,
+.project-media video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.project-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.project-media:hover .project-video {
+  opacity: 1;
+}
+
+.project-media:hover img {
+  opacity: 0;
 }
 
 #start {
@@ -471,6 +614,10 @@ body {
   text-align: center;
 }
 
+/*nobé*/
+html { scroll-behavior: smooth; }
+
+
 @media (max-width: 1024px), (pointer: coarse) {
   #vysvetleni {
     overflow-y: auto;
@@ -479,3 +626,129 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    position: static;
+  }
+
+  #navbar a {
+    font-size: 1.1rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.2rem;
+  }
+
+  #welcome-section h2 {
+    font-size: 1.2rem;
+  }
+
+  #projects {
+    padding: 3rem 1rem;
+  }
+
+  .project-tile {
+    grid-template-columns: 1fr;
+  }
+
+  #info p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .socials {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .socials a i {
+    font-size: 1.8rem;
+  }
+}
+
+/* === HERO: pouze text + tlačítko === */
+#textHlavniStranky{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#textHlavniStranky h1{
+  color:#fff;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: .02em;
+  font-size: clamp(2rem, 5.2vw, 3.4rem);
+  text-shadow:
+    0 6px 24px rgba(0,0,0,.65),
+    0 2px  1px rgba(0,0,0,.55);
+  margin-bottom: .25rem;
+}
+
+#textHlavniStranky h2{
+  color:#e5e7eb;
+  font-weight: 400;
+  line-height: 1.35;
+  font-size: clamp(1.05rem, 2.1vw, 1.6rem);
+  text-shadow: 0 4px 16px rgba(0,0,0,.55);
+}
+
+#start{
+  margin-top: 1.75rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  border: 2px solid #007ca6;
+  color:#fff;
+  cursor:pointer;
+  box-shadow: 0 10px 28px rgba(0,140,200,.35);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+#start:hover{
+  transform: translateY(-1px) scale(1.03);
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+  box-shadow: 0 14px 34px rgba(0,140,200,.45);
+}
+
+#start:focus-visible{
+  outline: 3px solid #56ccf2;
+  outline-offset: 3px;
+}
+
+#start{
+  margin-top: 1.75rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #8b5cf6, #4f46e5);
+  border: 2px solid #4338ca;
+  color:#fff;
+  cursor:pointer;
+
+  box-shadow: 0 10px 28px rgba(99,102,241,.38);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+#start:hover{
+  transform: translateY(-1px) scale(1.03);
+  background: linear-gradient(135deg, #a78bfa, #6366f1);
+  box-shadow: 0 14px 34px rgba(99,102,241,.5);
+}
+
+#start:focus-visible{
+  outline: 3px solid #a78bfa;
+  outline-offset: 3px;
+}
+
+

@@ -1,26 +1,22 @@
-# 🕹️ Minihra: HTML Catcher
+# 🌐 Portfolio – David Jelčic
 
-Jednoduchá arkádová hra vytvořená v HTML, CSS a JavaScriptu, kde hráč chytá padající prvky (HTML, CSS, JS...) a vyhýbá se chybám.
+Moje osobní portfolio stránka, kde prezentuji projekty vytvořené v rámci studia webového vývoje.  
+Součástí je také vlastní minihra vytvořená v JavaScriptu.
+Projekt vychází z projektu pro freeCodeCamp vylepšený o pár věcí.
+Původní verze: https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/5-personalPortfolioWebpage/index.html
 
-## 🎯 Cíl hry
-
-Sbírej správné položky a vyhýbej se bugům. Získej co nejvyšší skóre a přežij co nejdéle! Některé objekty přidávají život, jiné aktivují náhodné efekty – například zrychlení pohybu, změnu ovládání nebo bonusové body.
-
-## 🛠️ Technologie
-
-- HTML
-- CSS
+## 🛠 Použité technologie
+- HTML5
+- CSS3
 - JavaScript
+- Font Awesome
 
-## 🧪 Funkce
+## 📂 Obsah stránky
+- **Welcome sekce** – úvod a motto
+- **Projekty** – ukázky projektů
+- **Minihra** – malá JavaScriptová hra
+- **O mně** – informace o mně, kontakty, odkazy na GitHub a FreeCodeCamp
 
-- Náhodné spawnování různých objektů
-- Kolize s hráčem
-- Ztráta nebo přidání životů
-- Dynamické změny obtížnosti
-- Změna ovládání (reverzní mód)
 
-## 🎨 Stylizace
 
-- Vektorové obrázky (pixel art styl)
-    - Obrázky dělané pomocí Piskelu
+
