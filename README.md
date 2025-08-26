@@ -5,6 +5,10 @@ Součástí je také vlastní minihra vytvořená v JavaScriptu.
 Projekt vychází z projektu pro freeCodeCamp vylepšený o pár věcí.
 Původní verze: https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/5-personalPortfolioWebpage/index.html
 
+## 🚀 Live Demo
+👉 [Moje portfolio stránka](https://rayerking.github.io/Portfolio/)
+
+
 ## 🛠 Použité technologie
 - HTML5
 - CSS3
