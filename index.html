@@ -120,106 +120,257 @@
 
       <button id="start">Kouzelné tlačítko</button>
     </section>
-    <!-- Sekce projektů -->
+    <!-- Sekce projekt -->
     <section id="projects">
-      <h1>Projekty zaměřené na HTML a CSS</h1>
-      <div class="project-tile">
-        <div class="inner-projects">
-          <!-- projekt 1 = surveyForm = Koníčky -->
-          <h2 class="h2Flex">Survey Form</h2>
-          <a
-            href="https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/1-surveyForm/index.html"
-            target="_blank"
-            ><img
-              src="pictures/1-1-surveyFormUprava.png"
-              alt="Dotazník o koníčcích"
-              class="project-pictures"
-              id="surveyForm"
+      <div class="sectionHlavniProject">
+        <article class="hlavniProject">
+          <div class="inner-picture-hlavniProject">
+            <img
+              src="pictures/matematickaHra.png"
+              alt="matematickaHra"
               loading="lazy"
-          /></a>
-        </div>
-        <div class="inner-projects">
-          <h2 class="h2Flex">Tribute Page</h2>
-          <!-- projekt 2 = tributePage = Bitva u Sudoměře -->
-          <a
-            href="https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/2-tributePage/index.html"
-            target="_blank"
-            ><img
-              src="pictures/1-2-tributePageUprava.png"
-              alt="Stránka věnovaná Bitvě u Sudoměře"
-              class="project-pictures"
-              id="tributePage"
-              loading="lazy"
-          /></a>
-        </div>
+            />
+          </div>
+          <!-- část textu vedle obrazku -->
+          <div class="inner-text-hlavniProject">
+            <h2>Matematika Hrou 🧮</h2>
+            <p>
+              Matematika hrou je interaktivní webová aplikace určená pro děti,
+              která spojuje procvičování malé násobilky s hravými prvky. V
+              aplikaci si děti mohou procvičovat příklady malé násobilky, za
+              které získávají mince. Ty lze následně použít k nákupu
+              sběratelských kartiček, které se ukládají do alba. Některé karty
+              budou teprve doplněny – prozatím jsou nahrazeny kartou
+              <em>Placeholder</em>.
+            </p>
 
-        <div class="inner-projects">
-          <h2 class="h2Flex">Technical Documentation</h2>
-          <!-- projekt 3 = technicalDocumentationPage = Úvod do HTML -->
-          <a
-            href="https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/3-technicalDocumentationPage/index.html"
-            target="_blank"
-            ><img
-              src="pictures/1-3-technicalDocumentationPageUprava.png"
-              alt="Technická dokumentace HTML"
-              class="project-pictures"
-              id="technicalDocumentationPage"
-              loading="lazy"
-          /></a>
-        </div>
+            <p>
+              Inspirací mi byl chlapec, kterého jsem doučoval – chtěl jsem mu
+              zpříjemnit učení a ukázat, že i matematika může být zábava.
+            </p>
 
-        <div class="inner-projects">
-          <!-- projekt 4 = productLandingPage = BeeNature -->
-          <h2 class="h2Flex">Product Landing Page</h2>
-          <a
-            href="https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/4-productLandingPage/index.html"
-            target="_blank"
-            ><img
-              src="pictures/1-4-produktLandingPageUprava.png"
-              alt="Produktová stránka BeeNature"
-              class="project-pictures"
-              id="productLandingPage"
-              loading="lazy"
-          /></a>
-        </div>
-      </div>
-      <h1>Projekty zaměřené na JavaScript</h1>
-      <div class="project-tile">
-        <div class="inner-projects"  id="project-media-minihra">
-          <h2 class="h2Flex">Minihra</h2>
-          <a
-            href="https://rayerking.github.io/Minihra/index.html"
-            target="_blank"
-          >
-            <div class="project-media">
-              <img
-                src="pictures/UvodniObrazek.png"
-                alt="Obrázek minihry"
-                class="project-pictures"
-                id="minihra"
-                loading="lazy"
-              />
-              <video class="project-video" muted autoplay loop playsinline>
-                <source src="pictures/VideoMP4.mp4" type="video/mp4" />
-              </video>
+            <ul class="seznamTechnologii">
+              <li>Javascript</li>
+              <li>DOM</li>
+              <li>LocalStorage</li>
+            </ul>
+            <div class="odkazy">
+              <a
+                class="btn primary"
+                href="https://rayerking.github.io/MatematickaHra/"
+                target="_blank"
+                >Živá ukázka</a
+              >
+              <a
+                class="btn secondary"
+                href="https://github.com/RayerKing/MatematickaHra"
+                target="_blank"
+                >Zdrojový kód</a
+              >
             </div>
-          </a>
-        </div>
-        <div class="inner-projects">
-          <h2 class="h2Flex">Palindrome</h2>
-          <a
-            href="https://rayerking.github.io/CertificateProjects/2-Javascript_Algotithm_Data_Structures/1-Palidrome/index.html"
-            target="_blank"
-            ><img
-              src="pictures/rayerking.github.io_CertificateProjects_2-Javascript_Algotithm_Data_Structures_1-Palidrome_index.html (2).png"
-              alt="Palidrome"
-              class="project-pictures"
-              id="palidrome"
-              loading="lazy"
-          /></a>
-        </div>
-        <div class="inner-empty"></div>
-        <div class="inner-empty"></div>
+          </div>
+        </article>
+      </div>
+      <div class="flexDetail">
+        <details class="detaily">
+          <summary>Začátky</summary>
+          <div class="grid">
+            <article class="grid-article">
+              <div class="grid-media">
+                <img src="pictures/1-1-surveyFormUprava.png" alt="" />
+              </div>
+              <div class="grid-text">
+                <p>
+                  Jednoduchý formulář zaměřený na koníčky a volnočasové
+                  aktivity, vytvořený pro procvičení práce s HTML a CSS.
+                </p>
+                <ul class="seznamTechnologii odsun">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <div class="links">
+                  <a
+                    class="btn primary"
+                    href="https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/1-surveyForm/index.html"
+                    target="_blank"
+                    >Live</a
+                  >
+                  <a
+                    class="btn secondary"
+                    href="https://github.com/RayerKing/CertificateProjects/tree/main/1-Responsive_Web_Design/1-surveyForm"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="grid-article">
+              <div class="grid-media">
+                <img src="pictures/1-2-tributePageUprava.png" alt="" />
+              </div>
+              <div class="grid-text">
+                <p>
+                  Jednoduchá stránka věnovaná historické události, zaměřená na
+                  práci s textem, obrázky a strukturou HTML.
+                </p>
+                <ul class="seznamTechnologii odsun">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <div class="links">
+                  <a
+                    class="btn primary"
+                    href="https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/2-tributePage/index.html"
+                    target="_blank"
+                    >Live</a
+                  >
+                  <a
+                    class="btn secondary"
+                  
+                    href="https://github.com/RayerKing/CertificateProjects/tree/main/1-Responsive_Web_Design/2-tributePage"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="grid-article">
+              <div class="grid-media">
+                <img
+                  src="pictures/1-3-technicalDocumentationPageUprava.png"
+                  alt=""
+                />
+              </div>
+              <div class="grid-text">
+                <p>
+                  Technická dokumentace vysvětlující základy HTML, vytvořená pro
+                  procvičení strukturovaného obsahu.
+                </p>
+                <ul class="seznamTechnologii odsun">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <div class="links">
+                  <a
+                    class="btn primary"
+                    href="https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/3-technicalDocumentationPage/index.html"
+                    target="_blank"
+                    >Live</a
+                  >
+                  <a
+                    class="btn secondary"
+                    href="https://github.com/RayerKing/CertificateProjects/tree/main/1-Responsive_Web_Design/3-technicalDocumentationPage"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="grid-article">
+              <div class="grid-media">
+                <img src="pictures/1-4-produktLandingPageUprava.png" alt="" />
+              </div>
+              <div class="grid-text">
+                <p>
+                  Webová prezentace fiktivní ekologické značky o včelách,
+                  zaměřená na kombinaci textu, videa a barevného designu.
+                </p>
+                <ul class="seznamTechnologii odsun">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <div class="links">
+                  <a
+                    class="btn primary"
+                    href="https://rayerking.github.io/CertificateProjects/1-Responsive_Web_Design/4-productLandingPage/index.html"
+                    target="_blank"
+                    >Live</a
+                  >
+                  <a
+                    class="btn secondary"
+                    href="https://github.com/RayerKing/CertificateProjects/tree/main/1-Responsive_Web_Design/4-productLandingPage"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </details>
+
+        <details class="detaily" open>
+          <summary>Javascript</summary>
+          <div class="grid">
+            <article class="grid-article">
+              <div class="grid-media">
+                <img src="pictures/UvodniObrazek.png" alt="" />
+              </div>
+              <div class="grid-text">
+                <p>
+                  Jednoduchá mini hra, kterou jsem postavil pro zábavu a jako
+                  experiment s herní logikou.
+                </p>
+                <p>
+                  Současně mě bavilo vymýšlet způsoby, jak hráči trochu ztížit
+                  život. 😄
+                </p>
+                <ul class="seznamTechnologii odsun">
+                  <li>Javascript</li>
+                  <li>DOM</li>
+                </ul>
+                <div class="links">
+                  <a
+                    class="btn primary"
+                    href="https://rayerking.github.io/Minihra/index.html"
+                    target="_blank"
+                    >Živá ukázka</a
+                  >
+                  <a
+                    class="btn secondary"
+                    href="https://github.com/RayerKing/Minihra"
+                    target="_blank"
+                    >Zdrojový kód</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="grid-article">
+              <div class="grid-media">
+                <img
+                  src="pictures/rayerking.github.io_CertificateProjects_2-Javascript_Algotithm_Data_Structures_1-Palidrome_index.html (2).png"
+                  alt=""
+                />
+              </div>
+              <div class="grid-text">
+                <p>
+                  Palindromy jsou slova nebo věty, které se čtou stejně zleva i
+                  zprava. Tento projekt ověřuje, zda zadaný text tvoří
+                  palindrom.
+                </p>
+                <p>Využívá LocalStorage k ukládání historie hledání.</p>
+                <ul class="seznamTechnologii odsun">
+                  <li>Javascript</li>
+                  <li>DOM</li>
+                  <li>LocalStorage</li>
+                </ul>
+                <div class="links">
+                  <a
+                    class="btn primary"
+                    href="https://rayerking.github.io/CertificateProjects/2-Javascript_Algotithm_Data_Structures/1-Palidrome/index.html"
+                    target="_blank"
+                    >Živá ukázka</a
+                  >
+                  <a
+                    class="btn secondary"
+                    href="https://github.com/RayerKing/CertificateProjects/tree/main/2-Javascript_Algotithm_Data_Structures/1-Palidrome"
+                    target="_blank"
+                    >Zdrojový kód</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </details>
       </div>
     </section>
 
