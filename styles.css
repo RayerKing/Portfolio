@@ -988,4 +988,13 @@ html {
   
 }
 
+.budgetApp_pictures {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+.budgetApp_pictures > img {
+  width: 50%;
+}
 
