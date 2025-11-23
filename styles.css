@@ -826,7 +826,7 @@ html {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  
+
   box-shadow: 0 6px 18px rgba(124, 92, 255, 0.35);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -918,14 +918,12 @@ html {
   aspect-ratio: 16/9;
   background: #101010;
 }
-.grid-media img
- {
+.grid-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-
 
 .grid-text {
   padding: 14px;
@@ -938,9 +936,7 @@ html {
 .links a {
   font-weight: 600;
   text-decoration: none;
-  
 }
-
 
 .odsun {
   padding-top: 8px;
@@ -948,44 +944,42 @@ html {
 
 /* === RESPONSIVITA PRO HLAVNÍ PROJEKT === */
 @media (max-width: 900px) {
-  .sectionHlavniProject{
+  .sectionHlavniProject {
     padding: 10px;
   }
-  .hlavniProject{
+  .hlavniProject {
     width: 100%;
     background: #191919;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  transition: transform 0.16s ease, box-shadow 0.16s ease;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
   }
 
   .inner-picture-hlavniProject img {
     width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
-  .inner-picture-hlavniProject{
+  .inner-picture-hlavniProject {
     position: relative;
-  aspect-ratio: 16/9;
-  background: #101010;
+    aspect-ratio: 16/9;
+    background: #101010;
   }
 
-  .inner-text-hlavniProject{
-    
-  padding: 14px;
-
+  .inner-text-hlavniProject {
+    padding: 14px;
   }
 
-  .odkazy {display: flex;
-  gap: 10px;}
-
-  
+  .odkazy {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .budgetApp_pictures {
@@ -998,3 +992,20 @@ html {
   width: 50%;
 }
 
+.testovaci_budget_app {
+  color: black;
+  text-decoration: none;
+  padding: 1px 4px;
+  border-radius: 6px;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: inline-block;
+  border-radius: 8px;
+
+}
+
+.testovaci_budget_app:hover {
+  background: #e9e9e9;
+  transform: translateY(-2px);
+}
